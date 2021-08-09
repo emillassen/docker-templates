@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/emillassen/docker-templates/master/nessus/nessus.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Tools: Security:</Category>
+  <Name>Nessus</Name>
+  <Description>Nessus is a proprietary vulnerability scanner by Tenable, Inc. Nessus Essentials allows the user to scan their environment (up to 16 IP addresses per scanner) with the same high-speed, in-depth assessments and agentless scanning convenience that Nessus subscribers enjoy.</Description>
+  <Overview>Nessus is a proprietary vulnerability scanner by Tenable, Inc. Nessus Essentials allows the user to scan their environment (up to 16 IP addresses per scanner) with the same high-speed, in-depth assessments and agentless scanning convenience that Nessus subscribers enjoy.</Overview>
+  <Support></Support>
+  <Registry>https://registry.hub.docker.com/u/emillassen/nessus/</Registry>
+  <GitHub>https://github.com/emillassen/nessus</GitHub>
+  <Repository>emillassen/nessus</Repository>
+  <Project>https://www.tenable.com/products/nessus/nessus-essentials</Project>
+  <Deprecated>false</Deprecated>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8834</HostPort>
+        <ContainerPort>8834</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/config</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>https://[IP]:[PORT:8834]/</WebUI>
+  <Banner></Banner>
+  <Icon>https://raw.githubusercontent.com/emillassen/docker-templates/master/nessus/nessus.png</Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
