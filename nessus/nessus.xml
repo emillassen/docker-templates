@@ -3,7 +3,7 @@
   <TemplateURL>https://raw.githubusercontent.com/emillassen/docker-templates/master/nessus/nessus.xml</TemplateURL>
   <Beta>False</Beta>
   <Category>Tools: Security:</Category>
-  <Name>Nessus</Name>
+  <Name>nessus</Name>
   <Description>Nessus is a proprietary vulnerability scanner by Tenable, Inc. Nessus Essentials allows the user to scan their environment (up to 16 IP addresses per scanner) with the same high-speed, in-depth assessments and agentless scanning convenience that Nessus subscribers enjoy.</Description>
   <Overview>Nessus is a proprietary vulnerability scanner by Tenable, Inc. Nessus Essentials allows the user to scan their environment (up to 16 IP addresses per scanner) with the same high-speed, in-depth assessments and agentless scanning convenience that Nessus subscribers enjoy.</Overview>
   <Support></Support>
